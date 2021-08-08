@@ -1,5 +1,7 @@
 var btn=document.querySelector('button');
 
+
+//addEventListener für button
 btn.addEventListener('click',function(e){
     e.preventDefault();
     
@@ -21,7 +23,7 @@ document.querySelectorAll("img")[2].setAttribute("src",randomImageSource3);
 document.querySelectorAll("img")[1].setAttribute("src", randomImageSource2);
 
 
-//If player 1 wins
+// Message für der Spieler der Gewinn
 if (randomNumber1 > randomNumber2 && randomNumber1 >randomNumber3) {
   document.querySelector("h1").innerHTML = "🚩 Play 1 Wins!";
 }
